@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="styles.css">
+<title>My Hobby</title></head>
+
+<body bgcolor="#DAEDB5" alink="red" vlink="black" link="orange">
+
+/* Panel */
+<style>
+body {margin: 0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8FA080;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:  #C0D791;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #7EA171;
+}
+
+.active {
+  background-color: #B5CB8B;
+}
+/*copyright*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   font-size:15px;
+}
+</style>
+</head>
+
+
+<body bgcolor="#DAEDB5">
+
+<ul>
+<li style="float:left"><a class="active" href="index.html">Home</a></li> 
+<li><a href="contact.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="friends.html">My Friends</a></li>
+<li><a href="loves.html">My Loves</a></li>
+<li><a href="hobby.html">Hobby</a></li>
+<li>
+	<style>
+	.dropbtn {
+	  background-color: #8FA080;
+	  color: #C0D791;
+	  padding: 20px 30px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #7EA171;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: relative;
+	  z-index: 100;
+	  background-color: #B5CB8B;
+	  min-width: 160px;
+	  overflow: auto;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #B5CB8B;}
+
+	.show {display: block;}
+	</style>
+	</head>
+	<body style="background-color:#DAEDB5;">
+
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Education</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="midschool.html">Middle School</a>
+	    <a href="highschool.html">High School</a>
+	    <a href="dip.html">Diploma</a>
+	  </div>
+	</div>
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
+<li><a href="aboutme.html">About Me</a></li>
+</ul>
+
+
+#########
+
+<div style="padding:20px;margin-top:30px;height:1090px;">
+
+<h1><u>Hobbiess</u></h1>
+
+
+<br><br>
+ <div class="hcontainer">
+	<div class="box-4">
+	<br><video width="300" height="350" controls muted autoplay loop>
+	<source src="video/anis.mp4" type="video/mp4"> Your browser does not support HTML video.
+	</video>
+	<p><center><a href="https://youtube.com/shorts/pbDleaw3Ppw?feature=share" target="_blank">Anis</a></p>
+	</div> 
+
+	<div class="box-5">
+	 <center><br> Read & Buying Novels
+	 <br><img src="image/nvl.jpeg" width="180" height="280">
+	 <br><p>My current book count is 210 fiction novels! But there are still many in my to-be-read list</p>
+	</div>
+	
+	<div class="box-6">
+	 <center><br> Paint by Numbers
+	 <br><img src="image/numpaint.jpeg" width="160" height="260">
+	 <br><p>I always distract my stress with the painting by numbers canvas. Yet I can't finished it in time because of my short attention span </p>
+	</div>
+</div>
+<br><br>
+ <div class="h2container">
+  	<div class="box-4">
+	<center><br>Listening Music on Spotify
+	 <br><br><a href="https://open.spotify.com/playlist/2fXVPeedIMtZukicaGuEOW?si=6635b0c4046546cf"><img src="image/spotify.png" width="260" height="160"></a>
+	 <br> Click the image to go to Spotify 
+	 <br><br>My <a href="https://open.spotify.com/playlist/2fXVPeedIMtZukicaGuEOW?si=6635b0c4046546cf" target="_blank">playlist</a> for driving ✩♬˚.🎧⋆☾⁺₊✧
+	 <br><br><p>It's actually- I always listen to music whenever I drive, read, doing assignment, and while doing nothing </p>
+
+	</div>
+
+	<div class="box-5">
+	<center><br> Chilling and Watching Netflix or LokLok 
+	 <br><br><img src="image/netflix.jpeg" width="260" height="140">
+	 <br><br><p>Filling my free time with watching Korean-Drama is the best thing to release stress</p>
+ 	</div>
+	
+	<div class="box-6">
+	 <center><br> Playing Games
+	 <br><img src="image/games.jpeg" width="200" height="320">
+	 <br><p>Games in my phone </p>
+ 	</div>
+</div>
+<br><br>
+<center>
+<a href="https://www.instagram.com/fyaaaa.__?igsh=bnQ1YzFydDFid2Y3" target="_blank"><img src="image/ig.png" width="2%"</a> 
+<a href="https://wa.me/+601121418935" target="_blank"><img src="image/ws.png" width="2%"</a>   
+<a href="https://x.com/nissfys?s=11&t=JVrFujabVx6Ymeigg9FwzA" target="_blank"><img src="image/x.png" width="2%"</a>   
+<a href="https://www.facebook.com/anis.suffiya.50"><img src="image/fb.png" width="2%"</a>  
+<a href="https://snapchat.com/t/66KjCCt8" target="_blank"><img src="image/sc.png" width="2%"</a>   
+<a href="https://t.me/nissuffiya" target="_blank"><img src="image/tele.png" width="2%"</a>  
+<a href="https://www.youtube.com/channel/UCsO7W9oLQV29ABr-L_aSjPQ" target="_blank"><img src="image/yt.png" width="2%"</a>  
+<a href="https://www.tiktok.com/@fyaaaa.__?_t=8mwlUe9wFKz&_r=1" target="_blank"><img src="image/tt.png" width="2%"</a>  
+<br>  
+<div class="footer">
+  <p>	&copy;2024 by Anis Suffiya - All rights reserved<br> Best viewed on Google Chrome at a resolution of 1920 x 1080. Last updated June 5<sup>th</sup> 2024</p>
+
+</div> 
+</body>
+</html>

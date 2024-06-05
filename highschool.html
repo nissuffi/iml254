@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head><title>High School</title></head>
+
+<body bgcolor="#DAEDB5">
+
+/* Panel */
+<style>
+body {margin: 0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8FA080;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:  #C0D791;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #7EA171;
+}
+
+.active {
+  background-color: #B5CB8B;
+}
+
+/*copyright*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   font-size:15px;
+}
+</style>
+</head>
+
+
+<body bgcolor="#DAEDB5">
+
+<ul>
+<li style="float:left"><a class="active" href="index.html">Home</a></li> 
+<li><a href="contact.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="friends.html">My Friends</a></li>
+<li><a href="loves.html">My Loves</a></li>
+<li><a href="hobby.html">Hobby</a></li>
+<li>
+	<style>
+	.dropbtn {
+	  background-color: #8FA080;
+	  color: #C0D791;
+	  padding: 20px 30px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #7EA171;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: relative;
+	  z-index: 100;
+	  background-color: #B5CB8B;
+	  min-width: 160px;
+	  overflow: auto;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #B5CB8B;}
+
+	.show {display: block;}
+	</style>
+	</head>
+	<body style="background-color:#DAEDB5;">
+
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Education</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="midschool.html">Middle School</a>
+	    <a href="highschool.html">High School</a>
+	    <a href="dip.html">Diploma</a>
+	  </div>
+	</div>
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
+<li><a href="aboutme.html">About Me</a></li>
+</ul>
+<a name="top">
+
+<div style="padding:20px;margin-top:30px;height:1500px;">
+
+<h1>My High School Journey</h1>
+<br>
+<center><table style="width:70%" bgcolor="#87BC76" border="1">
+  <tr>
+    <td align="center">LOGO</td>
+    <td>NAME</td>
+    <td>ADDRESS</td>
+    <td>YEAR</td>
+    <td>ROLES</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="image/smkta.jpg" width="40%" height="40%"></td>
+    <td>SMK Tun Aminah Batu Pahat</td>
+    <td>Km 8, Jalan Kluang-Batu Pahat
+83007 Batu Pahat
+Johor</td>
+    <td>2017-2018</td>
+    <td>Librarian</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="image/smart.jpg" width="40%" height="40%"></td>
+    <td>SMI Al-Ikram</td>
+    <td>Jalan Pokok Machang, 13300 Tasek Gelugor, Pulau Pinang</td>
+    <td>2019-2021</td>
+    <td>Librarian</td>
+  </tr>
+</table>
+<p> I don't have many pictures of me in SMK Tun Aminah due to my carelessness- I reset my old phone and lost every picture there. At first, I was rebellious when I knew I needed to change my school, and it was up to the north... And now I'm thankful for it because I met many good people here and the friendships here are much better than in my old school. The environment here is so peaceful since it is a non-government school, which means there are not as many students as in government schools. 
+<br>
+<h2>My Highschool Stories</h2>
+<div class="row" align="center"> 
+  <div class="column">
+    <img src="image/botam.jpg" style="width:32%">
+    <img src="image/5z.png" style="width:32%">
+    <img src="image/spm.jpeg" style="width:32%">
+    <img src="image/asrama.jpeg" style="width:32%">
+    <img src="image/boat.jpg" style="width:32%">
+    <img src="image/vicret.jpg" style="width:32%">
+  </div>
+  <div class="column">
+    <img src="image/f4.jpeg" style="width:32%">
+    <img src="image/f41.jpeg" style="width:32%">
+    <img src="image/anissta.jpeg" style="width:32%">
+    <img src="image/f42.jpeg" style="width:32%">
+    <img src="image/kauthar.jpeg" style="width:32%">
+    <img src="image/lawatan.jpeg" style="width:32%">
+  </div> 
+  <div class="column">
+    <img src="image/lawatan1.jpeg" style="width:32%">
+    <img src="image/rehearsal.jpeg" style="width:32%">
+    <img src="image/vicret4.jpeg" style="width:32%">
+    <img src="image/f42.jpeg" style="width:32%">
+    <img src="image/badar1.jpeg" style="width:32%">
+    <img src="image/vicret3.jpeg" style="width:32%">
+  </div> 
+
+<br><br>
+
+<a href="#top"><img src="image/top.png" width="30" height="30" align="right"></a>
+<center>
+<a href="https://www.instagram.com/fyaaaa.__?igsh=bnQ1YzFydDFid2Y3" target="_blank"><img src="image/ig.png" width="2%"</a> 
+<a href="https://wa.me/+601121418935" target="_blank"><img src="image/ws.png" width="2%"</a>   
+<a href="https://x.com/nissfys?s=11&t=JVrFujabVx6Ymeigg9FwzA" target="_blank"><img src="image/x.png" width="2%"</a>   
+<a href="https://www.facebook.com/anis.suffiya.50"><img src="image/fb.png" width="2%"</a>  
+<a href="https://snapchat.com/t/66KjCCt8" target="_blank"><img src="image/sc.png" width="2%"</a>   
+<a href="https://t.me/nissuffiya" target="_blank"><img src="image/tele.png" width="2%"</a>  
+<a href="https://www.youtube.com/channel/UCsO7W9oLQV29ABr-L_aSjPQ" target="_blank"><img src="image/yt.png" width="2%"</a>  
+<a href="https://www.tiktok.com/@fyaaaa.__?_t=8mwlUe9wFKz&_r=1" target="_blank"><img src="image/tt.png" width="2%"</a>  
+<br><br><br><br><br>
+
+<div class="footer">
+  <p>	&copy;2024 by Anis Suffiya - All rights reserved<br> Best viewed on Google Chrome at a resolution of 1920 x 1080. Last updated June 5<sup>th</sup> 2024</p>
+</div>
+
+</body>
+</html>

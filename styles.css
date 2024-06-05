@@ -1,0 +1,613 @@
+h1{
+	text-align: center;
+	font-family: palatino;
+}
+
+
+/*Home*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+.details{
+	margin-left:8%;
+	margin-top:10%;
+}
+
+.details h2{
+	font-size: 50px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+span{
+	color:#FD886C;
+}
+
+.details p{
+	color:#393737;
+	line-height: 22px
+}
+
+.images{
+	width: 45%;
+	height:80%;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+
+.images img{
+	height:100%;
+	position: absolute;
+	left: 20%;
+	bottom: 0;
+	transform: translateX(-10%);
+	transform: translateY(90%);
+	transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+	bottom: 40px;
+}
+
+.images:hover .anis{
+	left: 25%;
+}
+
+/*my mother*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 270px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #A8E18E;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+/* Panel */
+
+body {margin: 0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8FA080;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:  #C0D791;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #7EA171;
+}
+
+.active {
+  background-color: #B5CB8B;
+}
+
+/*dropdown*/
+	.dropbtn {
+	  background-color: #8FA080;
+	  color: #C0D791;
+	  padding: 20px 30px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #7EA171;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: relative;
+	  z-index: 100;
+	  background-color: #B5CB8B;
+	  min-width: 160px;
+	  overflow: auto;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #B5CB8B;}
+
+	.show {display: block;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DAEDB5;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  height:50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+ 
+/*copyright*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   font-size:15px;
+}
+
+</style>
+/*end*/
+
+/* Style Contact Me page */
+.contact {
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #AACB9F;
+background-size: cover; 
+}
+
+
+.contact .ctccontent {
+max-width: 800px;
+text-align: center;
+}
+
+.contact .ctccontent h2 {
+font-size: 36px;
+font-weight: bold;
+color: black;
+}
+
+.contact .ctccontent p {
+font-size: 18px;
+font-weight: 300;
+color: black;
+}
+
+.ctccontainer {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+
+.ctccontainer .contactInfo {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.ctccontainer .contactInfo .box {
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+
+.ctccontainer .contactInfo .box .icon {
+min-width: 60px;
+height: 60px;
+background: #83B772;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+}
+
+.ctccontainer .contactInfo .box .text {
+display: flex;
+margin-left: 20px;
+font-size: 17px;
+color: black;
+flex-direction: column;
+font-weight: 300;
+}
+
+.ctccontainer .contactInfo .box .text h3 {
+font-weight: bold;
+color: #42743D;
+}
+
+.contactForm {
+width: 40%;
+padding: 40px;
+background: #E5F6DD;
+}
+
+.contactForm h2 {
+font-size: 30px;
+color: black;
+font-weight: 500;
+}
+
+.contactForm .inputBox {
+position: relative;
+width: 100%;
+margin-top: 1px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea {
+width: 100%; 
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+
+.contactForm .inputBox span {
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+
+.contactForm .inputBox input:focus ~  span,
+.contactForm .inputBox input:valid ~  span,
+.contactForm .inputBox textarea:focus ~  span,
+.contactForm .inputBox textarea:valid ~  span { 
+color: #ff8a99;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+width: 100px;
+background: #CEE1CC;
+color: black;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+background-color: #3A5D2E;
+color: white;
+}
+
+@media  (max-width: 991px) {
+.contact{
+padding: 50px;
+}
+.ctccontainer {
+flex-direction: column;
+}
+.ctccontainer .contactInfo {
+margin-bottom: 40px;
+}
+.ctccontainer .contactInfo, .contactForm {
+width: 100%;
+}
+}
+
+
+
+
+
+
+/*Loves*/
+
+.lcontainer{
+	display: flex;
+	column-gap: 50px;
+}
+
+.box-1{
+	height:800px;
+	width: 300px;
+	background-color: #AFD293;
+}
+
+
+.box-2{
+	height:600px;
+	width: 500px;
+	background-color: #A4BF8D;
+}
+
+.box-3{
+	height:800px;
+	width: 300px;
+	background-color: #ADBE9E;
+}
+
+
+/*hobby*/
+
+.hcontainer{
+	display: flex;
+	column-gap: 70px;
+	justify-content: center;
+}
+
+.h2container{
+	display: flex;
+	column-gap: 70px;
+	justify-content: center;
+}
+
+.box-4{
+	height:400px;
+	width: 300px;
+	background-color: #CADDBA;
+	border: 1px solid black;
+	shadow: 2px;
+}
+
+.box-5{
+	height:400px;
+	width: 300px;
+	background-color: #AFD293;
+}
+
+
+.box-6{
+	height:400px;
+	width: 300px;
+	background-color: #A4BF8D;
+}
+
+
+/*GALLERY IMAGES*/
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>

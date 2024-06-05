@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>My Contact</title></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">  
+<link rel= "stylesheet" type="text/css" href="styles.css">
+
+<body bgcolor="#DAEDB5">
+
+/* Panel */
+<style>
+body {margin: 0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8FA080;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:  #C0D791;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #7EA171;
+}
+
+.active {
+  background-color: #B5CB8B;
+}
+
+/*copyright*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   font-size:15px;
+}
+
+	.dropbtn {
+	  background-color: #8FA080;
+	  color: #C0D791;
+	  padding: 20px 30px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #7EA171;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: relative;
+	  z-index: 100;
+	  background-color: #B5CB8B;
+	  min-width: 160px;
+	  overflow: auto;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown a:hover {background-color: #B5CB8B;}
+
+	.show {display: block;}
+	
+</style>
+</head>
+
+
+<body bgcolor="#DAEDB5">
+
+<ul>
+<li style="float:left"><a class="active" href="index.html">Home</a></li> 
+<li><a href="contact.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="friends.html">My Friends</a></li>
+<li><a href="loves.html">My Loves</a></li>
+<li><a href="hobby.html">Hobby</a></li>
+<li>
+	<body style="background-color:#DAEDB5;">
+
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Education</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="midschool.html">Middle School</a>
+	    <a href="highschool.html">High School</a>
+	    <a href="dip.html">Diploma</a>
+	  </div>
+	</div>
+<li><a href="aboutme.html">About Me</a></li>
+</ul>
+
+
+<div style="padding:20px;margin-top:30px;height:1500px;">
+<body>
+
+<section class="contact">
+<div class="ctccontent">
+<center>
+<h1>Contact <font color="#276912">Me</font></h1>       
+<br>
+<p>Feel free to get in touch with me and you can ask questions <br>or give feedback about me and my website!</p></center>
+</div>
+
+<div class="ctccontainer">
+<div class="contactInfo">
+<div class="box">
+<div class="icon"><i class="fa fa-home"></i></div>
+<div class="text">
+<h3>Address</h3>
+<p>279, Lorong Amaryn 3,<br> Bukit Banyan,<br> 08000, Sungai Petani,<br> Kedah</p>
+</div>
+</div>
+
+<div class="box">
+<div class="icon"><i class="fa fa-phone"></i></div>
+<div class="text">
+<h3>Phone</h3>
+<p>+60 11-2141 8935</p>
+</div>
+</div>
+
+<div class="box">
+<div class="icon"><i class="fa fa-envelope"></i></div>
+<div class="text">
+<h3>Email</h3>
+<p>anissuffiya38@gmail.com</p>
+</div>
+</div>
+</div>
+
+<div class="contactForm">
+<form action="https://api.web3forms.com/submit" method="POST">
+<h2>Send Message</h2>
+<input type="hidden" name="apikey" value="2860177e-6ceb-47a4-a9b2-0b53d4460821">
+
+<div class="inputBox">
+<input type="text" name="name" required="required">
+<span>Full Name</span>
+</div>
+
+<div class="inputBox">
+<input type="text" name="email" required="required">
+<span>Email</span>
+</div>
+
+<div class="inputBox">
+<textarea name="message" required="required"></textarea>
+<span>Type your message...</span>
+</div>
+
+<div class="inputBox">
+<input type="submit" value="Send">
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<br><br>
+<center>
+<a href="https://www.instagram.com/fyaaaa.__?igsh=bnQ1YzFydDFid2Y3" target="_blank"><img src="image/ig.png" width="2%"</a> 
+<a href="https://wa.me/+601121418935" target="_blank"><img src="image/ws.png" width="2%"</a>   
+<a href="https://x.com/nissfys?s=11&t=JVrFujabVx6Ymeigg9FwzA" target="_blank"><img src="image/x.png" width="2%"</a>   
+<a href="https://www.facebook.com/anis.suffiya.50"><img src="image/fb.png" width="2%"</a>  
+<a href="https://snapchat.com/t/66KjCCt8" target="_blank"><img src="image/sc.png" width="2%"</a>   
+<a href="https://t.me/nissuffiya" target="_blank"><img src="image/tele.png" width="2%"</a>  
+<a href="https://www.youtube.com/channel/UCsO7W9oLQV29ABr-L_aSjPQ" target="_blank"><img src="image/yt.png" width="2%"</a>  
+<a href="https://www.tiktok.com/@fyaaaa.__?_t=8mwlUe9wFKz&_r=1" target="_blank"><img src="image/tt.png" width="2%"</a>  
+<br>  
+
+
+
+<div class="footer">
+  <p>	&copy;2024 by Anis Suffiya - All rights reserved<br> Best viewed on Google Chrome at a resolution of 1920 x 1080. Last updated June 5<sup>th</sup> 2024</p>
+</div>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+	</script>
+
+</body>
+</html>
